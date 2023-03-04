@@ -20,7 +20,7 @@ public class Colas {
     public static void main(String[] args) {
 
         System.out.println("Bienvenido al programa de Colas");
-        System.out.println("¿Qué tipo de Cola desea utilizar?");
+        System.out.println("¿Que tipo de Cola desea utilizar?");
         System.out.println("1. Basada en Arrays");
         System.out.println("2. Basada en Listas");
         int opcion = sc.nextInt();
@@ -33,7 +33,7 @@ public class Colas {
 
             int choice = 0;
             while (choice != 5) {
-                System.out.println("¿Qué acción desea realizar?");
+                System.out.println("¿Que acción desea realizar?");
                 System.out.println("1. Encolar");
                 System.out.println("2. Desencolar");
                 System.out.println("3. Consultar la cima");
@@ -62,7 +62,7 @@ public class Colas {
                         System.out.println("Saliendo del programa...");
                         break;
                     default:
-                        System.out.println("Opción inválida, por favor seleccione una opción válida.");
+                        System.out.println("Opción invalida, por favor seleccione una opción valida.");
                 }
             }
         } else if (opcion == 2) {
@@ -80,7 +80,7 @@ public class Colas {
             System.out.println("3. Desencolar");
             System.out.println("4. Cima");
             System.out.println("5. Salir");
-            System.out.print("Seleccione una opción: ");
+            System.out.print("Seleccione una opcion: ");
             
             opcion = sc.nextInt();
             
@@ -92,22 +92,22 @@ public class Colas {
                     System.out.println("La cola actual es: " + cola);
                     break;
                 case 3:
-                    System.out.print("Ingrese el número a encolar: ");
+                    System.out.print("Ingrese el numero a encolar: ");
                     int numero = sc.nextInt();
                     cola.add(numero);
-                    System.out.println("El número " + numero + " ha sido encolado.");
+                    System.out.println("El numero " + numero + " ha sido encolado.");
                     break;
                 case 4:
                     if (cola.isEmpty()) {
                         System.out.println("La cola está vacía.");
                     } else {
                         int eliminado = cola.remove();
-                        System.out.println("El número " + eliminado + " ha sido desencolado.");
+                        System.out.println("El numero " + eliminado + " ha sido desencolado.");
                     }
                     break;
                 case 5:
                     if (cola.isEmpty()) {
-                        System.out.println("La cola está vacía.");
+                        System.out.println("La cola esta vacia.");
                     } else {
                         System.out.println("La cima de la cola es: " + cola.peek());
                     }
@@ -116,7 +116,7 @@ public class Colas {
                     System.out.println("¡Hasta luego!");
                     break;
                 default:
-                    System.out.println("Opción inválida.");
+                    System.out.println("Opción invalida.");
                     break;
             }
         } while (opcion != 6);
